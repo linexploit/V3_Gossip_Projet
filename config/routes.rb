@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'welcome/:first_name', to: 'welcome#index', as: 'welcome'
   get 'gossip/:id', to: 'gossip#show', as: 'gossip'
   get 'user/:id', to: 'user#show', as: 'user'
+  root 'welcome#index'
 
   resources :gossips, only: [:index, :show]
 
