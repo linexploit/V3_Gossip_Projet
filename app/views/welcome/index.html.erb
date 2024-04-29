@@ -1,3 +1,18 @@
 <h1>Bienvenue <%= @first_name %> !</h1>
 
 <p> C'est notre giga site de potins !</p>
+
+<% @users.each do |user| %>
+  <div class="card">
+    <h5 class="card-header"><%= user.first_name %></h5>
+    <div class="card-body">
+      <% user.gossips.each do |gossip| %>
+        <p class="card-text">
+          <%= gossip.title %>
+          <%= link_to "En savoir plus", gossip_path(gossip), class: "btn btn-primary" %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
