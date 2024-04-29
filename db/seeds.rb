@@ -1,7 +1,7 @@
 require "faker"
 
-User.destroy_all
-Gossip.destroy_all
+# User.destroy_all
+# Gossip.destroy_all
 
 #créer 10 villes aléatoires
 cities = []
