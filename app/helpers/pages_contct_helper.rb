@@ -1,0 +1,2 @@
+module PagesContctHelper
+end
