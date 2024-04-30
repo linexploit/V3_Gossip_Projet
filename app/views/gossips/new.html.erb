@@ -1,0 +1,15 @@
+<%= form_tag gossips_path, method: :post do %>
+
+  <label for="title">Titre :</label><br>
+  <%= text_field_tag 'gossip[title]' %><br>
+
+  <label for="desc">Contenu :</label><br>
+  <%= text_field_tag 'gossip[description]' %><br><br>
+
+  <div class="form-group">
+    <%= label_tag :user_id, "Auteur" %>
+    <%= select_tag 'gossip[user_id]', options_for_select(User.all.collect { |u| [u.first_name, u.id] }), class: "form-control" %>
+  </div>
+
+  <%= submit_tag "Submit" %>
+<% end %>

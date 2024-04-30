@@ -1,7 +1,7 @@
 require "faker"
 
-# User.destroy_all
-# Gossip.destroy_all
+User.destroy_all
+Gossip.destroy_all
 
 #créer 10 villes aléatoires
 cities = []
@@ -21,7 +21,7 @@ end
 #créer 10 gossips aléatoires
 gossips = []
 20.times do
-    gossip = Gossip.create!(title: Faker::Hacker.say_something_smart, description: Faker::Lorem.paragraph(sentence_count:5), user: users.sample)
+    gossip = Gossip.create!(title: Faker::Lorem.characters(number: rand(3..14)), description: Faker::Lorem.paragraph(sentence_count:5), user: users.sample)
     gossips << gossip
 end
 
