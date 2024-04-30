@@ -1,3 +1,11 @@
+<% if flash[:error] %>
+  <div class="alert alert-danger">
+    <%= flash[:error] %>
+  </div>
+<% end %>
+
+
+
 <%= form_tag gossips_path, method: :post do %>
 
   <label for="title">Titre :</label><br>
@@ -10,6 +18,5 @@
     <%= label_tag :user_id, "Auteur" %>
     <%= select_tag 'gossip[user_id]', options_for_select(User.all.collect { |u| [u.first_name, u.id] }), class: "form-control" %>
   </div>
-
   <%= submit_tag "Submit" %>
 <% end %>

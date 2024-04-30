@@ -1824,3 +1824,865 @@ ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/b
   
 ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
   
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:10:58 +0200
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:10:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GossipsController#new as HTML
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:11:in `collect'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:11:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 72.3ms | Allocations: 15632)
+  Rendered gossips/new.html.erb within layouts/application (Duration: 70.8ms | Allocations: 15116)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 220.4ms | Allocations: 67956)
+  Rendered layout layouts/application.html.erb (Duration: 222.7ms | Allocations: 70962)
+Completed 200 OK in 663ms (Views: 227.1ms | ActiveRecord: 27.6ms | Allocations: 377244)
+
+
+Completed 200 OK in 665ms (Views: 225.5ms | ActiveRecord: 54.5ms | Allocations: 377579)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:11:03 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"", "description"=>"", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:11:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 865)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2186)
+Completed 200 OK in 30ms (Views: 10.1ms | ActiveRecord: 1.7ms | Allocations: 9200)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:11:27 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Khdlzjslashanskhizhf", "description"=>"Thslhda", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:11:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 865)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2185)
+Completed 200 OK in 13ms (Views: 5.3ms | ActiveRecord: 1.1ms | Allocations: 4893)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:13:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:9
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:9
+  Rendered welcome/index.html.erb within layouts/application (Duration: 95.5ms | Allocations: 27799)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 165.2ms | Allocations: 59107)
+Completed 200 OK in 431ms (Views: 153.0ms | ActiveRecord: 16.6ms | Allocations: 353012)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:13:59 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:11:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1456)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2783)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.5ms | Allocations: 3264)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:14:28 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"THP", "description"=>"C'est d'la balle", "user_id"=>"48"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mGossip Create (0.8ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "THP"], ["description", "C'est d'la balle"], ["user_id", 48], ["created_at", "2024-04-30 14:14:28.261415"], ["updated_at", "2024-04-30 14:14:28.261415"]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+Redirected to http://127.0.0.1:3000/gossips.42
+Completed 302 Found in 17ms (ActiveRecord: 4.9ms | Allocations: 6916)
+
+
+Started GET "/gossips.42" for 127.0.0.1 at 2024-04-30 16:14:28 +0200
+Processing by GossipsController#index as */*
+Redirected to http://127.0.0.1:3000/welcome/Thomas
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 159)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-04-30 16:14:28 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:9
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:9
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2777)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4314)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.2ms | Allocations: 4585)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:15:59 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:9
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:9
+  Rendered welcome/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 11019)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 26419)
+Completed 200 OK in 48ms (Views: 28.8ms | ActiveRecord: 5.4ms | Allocations: 31239)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:17:58 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:9
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:9
+  Rendered welcome/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 11013)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 26422)
+Completed 200 OK in 42ms (Views: 26.0ms | ActiveRecord: 4.9ms | Allocations: 31239)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:18:02 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:11:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1358)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2685)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 3133)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:18:17 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Wazza", "description"=>"What's up dawg", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mGossip Create (0.6ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Wazza"], ["description", "What's up dawg"], ["user_id", 41], ["created_at", "2024-04-30 14:18:17.040958"], ["updated_at", "2024-04-30 14:18:17.040958"]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+Redirected to http://127.0.0.1:3000/gossips.43
+Completed 302 Found in 13ms (ActiveRecord: 4.1ms | Allocations: 4014)
+
+
+Started GET "/gossips.43" for 127.0.0.1 at 2024-04-30 16:18:17 +0200
+Processing by GossipsController#index as */*
+Redirected to http://127.0.0.1:3000/welcome/Thomas
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-04-30 16:18:17 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:9
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:9
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2824)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4364)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.7ms | Allocations: 4635)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-04-30 16:18:34 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:9
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:9
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 11055)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 26470)
+Completed 200 OK in 47ms (Views: 28.6ms | ActiveRecord: 5.3ms | Allocations: 31287)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:18:59 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:11:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 7085)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 22334)
+Completed 200 OK in 42ms (Views: 27.8ms | ActiveRecord: 5.0ms | Allocations: 27860)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:19:08 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Wazaa", "description"=>"What's up ?", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Wazaa"], ["description", "What's up ?"], ["user_id", 41], ["created_at", "2024-04-30 14:19:08.385223"], ["updated_at", "2024-04-30 14:19:08.385223"]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+Redirected to http://127.0.0.1:3000/gossips.44
+Completed 302 Found in 11ms (ActiveRecord: 3.9ms | Allocations: 4457)
+
+
+Started GET "/gossips.44" for 127.0.0.1 at 2024-04-30 16:19:08 +0200
+Processing by GossipsController#index as */*
+Redirected to http://127.0.0.1:3000/welcome/Thomas
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-04-30 16:19:08 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4238)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5576)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.7ms | Allocations: 6083)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:23:17 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:18:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 7150)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 22462)
+Completed 200 OK in 50ms (Views: 35.8ms | ActiveRecord: 4.5ms | Allocations: 27987)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:23:25 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"go", "description"=>"", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:18:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 877)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2197)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 1.3ms | Allocations: 6421)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:24:35 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 11343)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 26570)
+Completed 200 OK in 53ms (Views: 33.7ms | ActiveRecord: 5.7ms | Allocations: 31385)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:24:39 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:18:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1423)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2750)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.8ms | Allocations: 3198)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:24:52 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Titre", "description"=>"Description", "user_id"=>"42"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Titre"], ["description", "Description"], ["user_id", 42], ["created_at", "2024-04-30 14:24:52.627216"], ["updated_at", "2024-04-30 14:24:52.627216"]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+Redirected to http://127.0.0.1:3000/gossips.45
+Completed 302 Found in 16ms (ActiveRecord: 4.9ms | Allocations: 3971)
+
+
+Started GET "/gossips.45" for 127.0.0.1 at 2024-04-30 16:24:52 +0200
+Processing by GossipsController#index as */*
+Redirected to http://127.0.0.1:3000/welcome/Thomas
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-04-30 16:24:52 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3154)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4479)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 1.1ms | Allocations: 4751)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:25:01 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3104)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4429)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 4699)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossip/45" for 127.0.0.1 at 2024-04-30 16:26:55 +0200
+  
+ActionController::RoutingError (uninitialized constant GossipController):
+  
+Started GET "/gossip/21" for 127.0.0.1 at 2024-04-30 16:27:02 +0200
+  
+ActionController::RoutingError (uninitialized constant GossipController):
+  
+Started GET "/gossip/23" for 127.0.0.1 at 2024-04-30 16:28:29 +0200
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:8
+  Rendered gossips/show.html.erb within layouts/application (Duration: 17.6ms | Allocations: 7788)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 23176)
+Completed 200 OK in 48ms (Views: 30.5ms | ActiveRecord: 5.4ms | Allocations: 29723)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:28:39 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 4328)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 5666)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 1.9ms | Allocations: 6144)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:31:36 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 7152)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 22402)
+Completed 200 OK in 46ms (Views: 30.0ms | ActiveRecord: 5.0ms | Allocations: 27930)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:31:38 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"", "description"=>"", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 872)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2192)
+Completed 200 OK in 11ms (Views: 4.0ms | ActiveRecord: 1.1ms | Allocations: 6357)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:32:48 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"", "description"=>"", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1266)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 16486)
+Completed 200 OK in 61ms (Views: 19.6ms | ActiveRecord: 7.3ms | Allocations: 31564)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:32:52 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 4330)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5668)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 1.0ms | Allocations: 6182)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:32:54 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1071)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2395)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 2653)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:33:02 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3122)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4447)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.9ms | Allocations: 4717)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:33:06 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1068)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2392)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms | Allocations: 2643)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:33:16 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Test", "description"=>"", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 872)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2192)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 1.1ms | Allocations: 4914)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:33:31 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"j'en ai marre de ce test", "description"=>"Wasa", "user_id"=>"41"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 872)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2192)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 1.0ms | Allocations: 4923)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:34:11 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3119)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4444)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 1.0ms | Allocations: 4714)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/gossips/new" for 127.0.0.1 at 2024-04-30 16:35:31 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/gossips/new.html.erb:19:in `collect'
+  Rendered gossips/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1065)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2389)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms | Allocations: 2640)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started POST "/gossips" for 127.0.0.1 at 2024-04-30 16:35:50 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Exemple", "description"=>"Ceci fonctionne", "user_id"=>"50"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mGossip Create (0.3ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Exemple"], ["description", "Ceci fonctionne"], ["user_id", 50], ["created_at", "2024-04-30 14:35:50.824079"], ["updated_at", "2024-04-30 14:35:50.824079"]]
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:16:in `create'
+Redirected to http://127.0.0.1:3000/gossips.46
+Completed 302 Found in 15ms (ActiveRecord: 3.5ms | Allocations: 2923)
+
+
+Started GET "/gossips.46" for 127.0.0.1 at 2024-04-30 16:35:50 +0200
+Processing by GossipsController#index as */*
+Redirected to http://127.0.0.1:3000/welcome/Thomas
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-04-30 16:35:50 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3183)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4508)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.8ms | Allocations: 4779)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/team" for 127.0.0.1 at 2024-04-30 16:37:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.6ms | Allocations: 197)
+Importmap skipped missing path: turbo.min.js
+Importmap skipped missing path: turbo.min.js
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | Allocations: 31480)
+Completed 200 OK in 277ms (Views: 67.2ms | ActiveRecord: 0.0ms | Allocations: 315415)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/contact" for 127.0.0.1 at 2024-04-30 16:37:25 +0200
+Processing by ContactController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (Duration: 0.9ms | Allocations: 350)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1697)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2127)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-04-30 16:37:30 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:15
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 41], ["user_id", 42], ["user_id", 43], ["user_id", 44], ["user_id", 45], ["user_id", 46], ["user_id", 47], ["user_id", 48], ["user_id", 49], ["user_id", 50]]
+  ↳ app/views/welcome/index.html.erb:15
+  Rendered welcome/index.html.erb within layouts/application (Duration: 76.6ms | Allocations: 28056)
+  Rendered layout layouts/application.html.erb (Duration: 79.0ms | Allocations: 29399)
+Completed 200 OK in 110ms (Views: 68.0ms | ActiveRecord: 11.7ms | Allocations: 39901)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  

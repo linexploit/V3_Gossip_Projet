@@ -14,8 +14,10 @@ class GossipsController < ApplicationController
   def create
     @gossip = Gossip.new(gossip_params)
     if @gossip.save
-      redirect_to gossips_path(@gossip), notice:"Le potin à été créé !"
+      redirect_to gossips_path(@gossip)
+      flash[:success] = "Le potin a été enregistré avec succès !"
     else
+      flash.now[:error] = "Erreur : Le titre doit être compris entre 3 et 14 caractères, et il ne faut pas qu'un des champs soit vide."
       render :new
     end
   end

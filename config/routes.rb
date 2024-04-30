@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'contact#contact'
   get 'team', to: 'team#team'
   get 'welcome/:first_name', to: 'welcome#index', as: 'welcome'
-  get 'gossip/:id', to: 'gossip#show', as: 'gossip'
+  get 'gossip/:id', to: 'gossips#show', as: 'gossip'
   get 'user/:id', to: 'user#show', as: 'user'
   root 'welcome#index'
 
