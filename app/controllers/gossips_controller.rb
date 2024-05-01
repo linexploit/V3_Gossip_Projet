@@ -10,7 +10,7 @@ class GossipsController < ApplicationController
 
   def new
     @gossips = Gossip.all
-    @gossip = Gossip.find_by(params[:id])
+    @gossip = Gossip.new
     @users = User.includes(:gossips)
     @cities = City.all
   end
@@ -34,14 +34,15 @@ class GossipsController < ApplicationController
   end
 
   def update
-    @gossip = Gossip.find(params[:id])
+    @gossip = Gossip.new(gossip_params)
     if @gossip.update(gossip_params)
-      redirect_to @gossip
+      redirect_to gossips_path
+      flash[:success_edit] = "Le potin a été édité avec succès !"
     else
+      flash.now[:error_edit] = "Erreur"
       render :edit
     end
   end
-
 
   private
   def gossip_params

@@ -4,8 +4,7 @@
   </div>
 <% end %>
 
-
-<%= form_with model: @gossip, local: true do |form| %>
+<%= form_with(model: @gossip, local: true) do |form| %>
 
   <%= form.label :title, "Titre"%>
   <%= form.text_field :title %><br>

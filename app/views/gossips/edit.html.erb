@@ -1,15 +1,29 @@
+<% if flash[:error_edit] %>
+  <div class="alert alert-danger">
+    <%= flash[:error_edit] %>
+  </div>
+<% end %>
+
 <div class="container">
   <h1 class="mt-5">Modifier le potin</h1>
 
   <%= form_with(model: @gossip, url: gossips_path(@gossip), method: :patch) do |form| %>
+
+  <%= form.label :title, "Titre"%>
+  <%= form.collection_select :title, @gossips, :id, :title, prompt: "Sélectionne un titre" %><br>
+
+  <%= form.label :description, "Contenu"%>
+  <%= form.text_area :description %><br>
+
+  <div class="form-group">
+    <%= form.label :user_id, "Auteur"%>
+    <%= form.collection_select :user_id, @users, :id, :first_name, prompt: "Sélectionne un user" %><br>
+  </div>
+
     <div class="form-group">
-      <%= form.label :title %>
-      <%= form.text_field :title, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= form.label :description %>
-      <%= form.text_area :description, class: "form-control" %>
-    </div>
-    <%= form.submit "Enregistrer", class: "btn btn-primary" %>
-  <% end %>
-</div>
+    <%= form.label :city_id, "Ville"%>
+    <%= form.collection_select :city_id, @cities, :id, :name, prompt: "Sélectionne une ville" %><br>
+  </div>
+
+  <%= form.submit "Submit" %>
+<% end %>
