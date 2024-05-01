@@ -1,15 +1,12 @@
 <div class="container">
   <h1>Bienvenue <%= @first_name %> !</h1>
 
-  <% if flash[:success] %>
-  <div class="alert alert-success">
-    <%= flash[:success] %>
-  </div>
-<% end %>
 
   <p> C'est notre giga site de potins !</p>
 
- <%= link_to "Créer un nouveau potin", new_gossip_path, data: {turbo_method: :post} %>
+ <%= link_to "Créer un nouveau potin", new_gossip_path, class: "btn btn-primary mb-3" %>
+ <%= link_to "Editer un nouveau potin", edit_gossip_path(@gossips), class: "btn btn-primary mb-3" %>
+
 
   <div class="d-flex flex-wrap">
   <% @users.each do |user| %>

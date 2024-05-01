@@ -9,11 +9,18 @@ class GossipsController < ApplicationController
   end
 
   def new
-    @gossip = Gossip.new
-    @users = User.all
+    @gossips = Gossip.all
+    @gossip = Gossip.find_by(params[:id])
+    @users = User.includes(:gossips)
     @cities = City.all
   end
 
+  def edit
+    @gossips = Gossip.all
+    @gossip = Gossip.new
+    @users = User.includes(:gossips)
+    @cities = City.all
+  end
 
   def create
     @gossip = Gossip.new(gossip_params)
@@ -26,14 +33,14 @@ class GossipsController < ApplicationController
     end
   end
 
-  # def update
-  #   @gossip = Gossip.find(params[:id])
-  #   if @gossip.update(params[:id])
-  #     redirect_to gossips_path(@gossip)
-  #   else
-  #     render :edit
-  #   end
-  # end
+  def update
+    @gossip = Gossip.find(params[:id])
+    if @gossip.update(gossip_params)
+      redirect_to @gossip
+    else
+      render :edit
+    end
+  end
 
 
   private

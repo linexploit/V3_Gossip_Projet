@@ -13,7 +13,7 @@ end
 #créer 10 utilisateurs aléatoires
 users = []
 10.times do
-    user = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.paragraph(sentence_count:5), email: Faker::Internet.email, age: Faker::Number.between(from: 13, to: 60), city: City.all.sample)
+    user = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, profil: Faker::Lorem.paragraph(sentence_count: 5), email: Faker::Internet.email, age: Faker::Number.between(from: 13, to: 60), city: City.all.sample)
     users << user
 end
 
@@ -65,7 +65,7 @@ puts users[5].city.name
 
 #vérifier les messages du user à l'index 5
 users[5].messages.each do |message|
-    puts message.message  
+    puts message.message
 end
 
 #vérifier les destinataires de chaque message de l'user index 5 | !!! comme les messages sont attribués au hasard, certains messages n'ont pas de destinataire
