@@ -1,0 +1,17 @@
+<div class="d-flex flex-wrap">
+  <% @cities.each do |city| %>
+    <% if city.gossips.present? %>
+      <div class="card text-white bg-dark mb-3 mx-2" style="width: 22rem;">
+        <div class="card-header"><%= city.name %></div>
+        <div class="card-body">
+          <% city.gossips.each do |gossip| %>
+            <p class="card-text">
+              <%= gossip.title %>
+              <%= link_to "En savoir plus", gossip_path(gossip), class: "btn btn-primary" %>
+            </p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

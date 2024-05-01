@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Voici la page des potins de cette ville</h1>
+ 
+  <div class="d-flex flex-wrap">
+    <div class="card text-white bg-dark mb-3 mx-2" style="width: 22rem;">
+      <div class="card-header"><%= @city.name %></div>
+      <div class="card-body">
+        <% @gossips.each do |gossip| %>
+          <p class="card-text">
+            <%= "#{gossip.title} - #{gossip.user.first_name}" %>
+            <%= link_to "En savoir plus", gossip_path(gossip), class: "btn btn-primary" %>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -7,7 +7,9 @@
   <h1>Voici la page de <%= @user.first_name %> </h1>
   <p><strong>Prénom:</strong> <%= @user.first_name %></p>
   <p><strong>Nom:</strong> <%= @user.last_name %></p>
+  <p><strong>Description:</strong> <%= @user.description%></p>
   <p><strong>E-mail:</strong> <%= @user.email%></p>
   <p><strong>Âge:</strong> <%= @user.age %></p>
+  <p><strong>Ville:</strong> <%= link_to @user.city.name, city_path(@user.city) %></p> 
 </body>
 </html>

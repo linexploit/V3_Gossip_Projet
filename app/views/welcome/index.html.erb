@@ -9,10 +9,11 @@
 
   <p> C'est notre giga site de potins !</p>
 
-  <%= link_to "Créer un nouveau potin", new_gossip_path, class: "btn btn-primary" %>
+ <%= link_to "Créer un nouveau potin", new_gossip_path, data: {turbo_method: :post} %>
 
   <div class="d-flex flex-wrap">
-    <% @users.each do |user| %>
+  <% @users.each do |user| %>
+    <% if user.gossips.present? %>
       <div class="card text-white bg-dark mb-3 mx-2" style="width: 22rem;">
         <div class="card-header"><%= user.first_name %></div>
         <div class="card-body">
@@ -25,5 +26,5 @@
         </div>
       </div>
     <% end %>
-  </div>
+  <% end %>
 </div>

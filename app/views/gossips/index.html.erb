@@ -1,0 +1,23 @@
+  <% if flash[:success] %>
+  <div class="alert alert-success">
+    <%= flash[:success] %>
+  </div>
+<% end %>
+
+<div class="d-flex flex-wrap">
+  <% @users.each do |user| %>
+    <% if user.gossips.present? %>
+      <div class="card text-white bg-dark mb-3 mx-2" style="width: 22rem;">
+        <div class="card-header"><%= user.first_name %></div>
+        <div class="card-body">
+          <% user.gossips.each do |gossip| %>
+            <p class="card-text">
+              <%= gossip.title %>
+              <%= link_to "En savoir plus", gossip_path(gossip), class: "btn btn-primary" %>
+            </p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

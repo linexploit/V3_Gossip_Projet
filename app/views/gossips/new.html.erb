@@ -5,18 +5,23 @@
 <% end %>
 
 
+<%= form_with model: @gossip, local: true do |form| %>
 
-<%= form_tag gossips_path, method: :post do %>
+  <%= form.label :title, "Titre"%>
+  <%= form.text_field :title %><br>
 
-  <label for="title">Titre :</label><br>
-  <%= text_field_tag 'gossip[title]' %><br>
-
-  <label for="desc">Contenu :</label><br>
-  <%= text_field_tag 'gossip[description]' %><br><br>
+  <%= form.label :description, "Contenu"%>
+  <%= form.text_area :description %><br>
 
   <div class="form-group">
-    <%= label_tag :user_id, "Auteur" %>
-    <%= select_tag 'gossip[user_id]', options_for_select(User.all.collect { |u| [u.first_name, u.id] }), class: "form-control" %>
+    <%= form.label :user_id, "Auteur"%>
+    <%= form.collection_select :user_id, @users, :id, :first_name, prompt: "Sélectionne un user" %><br>
   </div>
-  <%= submit_tag "Submit" %>
+
+    <div class="form-group">
+    <%= form.label :city_id, "Ville"%>
+    <%= form.collection_select :city_id, @cities, :id, :name, prompt: "Sélectionne une ville" %><br>
+  </div>
+
+  <%= form.submit "Submit" %>
 <% end %>
